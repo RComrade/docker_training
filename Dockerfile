@@ -17,8 +17,6 @@ RUN apt-get update && apt-get install -y \
     unzip \
     mariadb-client
     
-COPY src /var/www
-
 RUN composer global require laravel/installer
 
 RUN composer install
