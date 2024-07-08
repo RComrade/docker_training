@@ -15,7 +15,7 @@ export SECOND_HOST=${MARIADB_SECOND_HOST:-'mariadb_slave'}
  log=$(echo $result|awk '{print $5}')
  position=$(echo $result|awk '{print $6}')
  
-docker-compose up -d
+docker-compose -f docker-compose.yaml up -d
 echo
 echo Waiting 30s for containers to be up and running...
 echo Implementing mariadb master-slave replication...
