@@ -27,7 +27,5 @@ RUN npm install
 RUN  docker-php-ext-install pdo_mysql \
     && docker-php-ext-install mysqli
 
-RUN composer update
-
 EXPOSE 9000
 CMD ["php-fpm"]
