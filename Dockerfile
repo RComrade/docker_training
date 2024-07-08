@@ -34,8 +34,6 @@ RUN  docker-php-ext-install pdo_mysql \
 
 RUN composer update
 
-RUN php artisan key:generate
-
 # Expose port 9000 and start php-fpm server
 EXPOSE 9000
 CMD ["php-fpm"]
