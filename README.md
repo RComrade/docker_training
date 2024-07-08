@@ -9,6 +9,6 @@ docker - Можно установить с помощью команды `curl 
 docker-compose - Можно установить с помощью команды `apt-get update && apt-get install docker-compose -y`  <br />
 
 ## Установка и запуск 
-Скачаем файлы из репозитория `git clone https://github.com/RComrade/docker_training` <br />
-Перейдем в папку с проектом `cd docker_training` <br />
-Запустим установочный скрипт `bash app_install_w_replicaiton.sh` <br />
+Скачаем файлы из репозитория - `git clone https://github.com/RComrade/docker_training` <br />
+Перейдем в папку с проектом - `cd docker_training` <br />
+Запустим установочный скрипт - `bash app_install_w_replicaiton.sh` <br />
