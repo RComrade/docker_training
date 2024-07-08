@@ -43,5 +43,5 @@ echo
    SHOW SLAVE STATUS\G;"
    
 docker exec -it testovoe chmod 777 /var/www 
-docker exec -it composer update
+docker exec -it testovoe composer update
 docker exec -it testovoe php artisan migrate:fresh --seed
