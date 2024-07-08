@@ -42,6 +42,6 @@ echo
    start slave;\
    SHOW SLAVE STATUS\G;"
    
-docker exec -it testovoe chmod 777 /var/www 
+docker exec -it testovoe chmod -R 777 /var/www 
 docker exec -it testovoe composer update
 docker exec -it testovoe php artisan migrate:fresh --seed
