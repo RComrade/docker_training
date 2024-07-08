@@ -19,8 +19,6 @@ RUN apt-get update && apt-get install -y \
 
 RUN composer global require laravel/installer
 
-COPY --chown=www-data:www-data src /var/www
-
 RUN composer install
 RUN npm install
 
