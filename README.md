@@ -90,8 +90,8 @@ name : "Разработать Dockerfiles"
 updated_at : "2024-07-08T22:16:21.000000Z"
 ```
 POST `/api/item/{id}` Создает задачу с заданным `{id}`
-Пример запроса:
-`item : {name: "New task"}`
+Пример запроса: 
+`item : {name: "New task"}`  <br />
 Пример ответа:
 ```
 {
