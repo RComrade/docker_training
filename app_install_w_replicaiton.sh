@@ -41,7 +41,9 @@ echo
    MASTER_PASSWORD='$FIRST_REPL_PASSWORD', MASTER_LOG_FILE='$log', MASTER_LOG_POS=$position;\
    start slave;\
    SHOW SLAVE STATUS\G;"
-   
+
+docker exec -it testovoe chown -R www-data:www-data /var/www    
 docker exec -it testovoe chmod -R 777 /var/www 
 docker exec -it testovoe composer update
 docker exec -it testovoe php artisan migrate:fresh --seed
+echo Done!
