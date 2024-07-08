@@ -24,7 +24,7 @@ RUN composer global require laravel/installer
 #COPY src /var/www
 
 COPY --chown=www-data:www-data src /var/www
-#COPY --chmod -R 666 files* /var/www/
+COPY --chmod -R 777 files* /var/www/
 
 RUN composer install
 RUN npm install
