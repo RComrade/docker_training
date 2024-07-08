@@ -17,11 +17,6 @@ RUN apt-get update && apt-get install -y \
     unzip \
     mariadb-client
     
-RUN composer global require laravel/installer
-
-RUN composer install
-RUN npm install
-
 RUN  docker-php-ext-install pdo_mysql \
     && docker-php-ext-install mysqli
 
