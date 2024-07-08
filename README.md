@@ -113,7 +113,8 @@
 + `completed_at` - передается время в формате Zulu, отвечает за время завершения задачи <br />
 
 ## Диаграмма приложения <br />
-![image](https://github.com/RComrade/docker_training/assets/46085502/6ff4039a-a36e-424f-8d35-eafe4f06f3b0)
+![image](https://github.com/RComrade/docker_training/assets/46085502/852f1322-375e-40c1-9144-7de74602a30b)
+
 
 ## Вопросы <br />
 Q: Почему для корректной работы приложению требуются права на запуск файлов? <br />
