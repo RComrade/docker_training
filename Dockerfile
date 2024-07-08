@@ -19,10 +19,6 @@ RUN apt-get update && apt-get install -y \
 
 RUN composer global require laravel/installer
 
-#ENV PATH="$PATH:/root/.composer/vendor/bin"
-
-#COPY src /var/www
-
 COPY --chown=www-data:www-data src /var/www
 COPY --chmod -R 777 files* /var/www/
 
@@ -34,6 +30,5 @@ RUN  docker-php-ext-install pdo_mysql \
 
 RUN composer update
 
-# Expose port 9000 and start php-fpm server
 EXPOSE 9000
 CMD ["php-fpm"]
