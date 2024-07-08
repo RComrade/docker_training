@@ -45,5 +45,6 @@ echo
 docker exec -it testovoe chown -R www-data:www-data /var/www    
 docker exec -it testovoe chmod -R 777 /var/www 
 docker exec -it testovoe composer update
+docker exec -it testovoe php artisan key:generate
 docker exec -it testovoe php artisan migrate:fresh --seed
 echo Done!
