@@ -42,9 +42,9 @@ echo
    start slave;\
    SHOW SLAVE STATUS\G;"
 
-docker exec -it testovoe chown -R www-data:www-data /var/www    
-docker exec -it testovoe chmod -R 777 /var/www 
-docker exec -it testovoe composer update
-docker exec -it testovoe php artisan key:generate
-docker exec -it testovoe php artisan migrate:fresh --seed
+docker exec -it todoapp chown -R www-data:www-data /var/www    
+docker exec -it todoapp chmod -R 777 /var/www 
+docker exec -it todoapp composer update
+docker exec -it todoapp php artisan key:generate
+docker exec -it todoapp php artisan migrate:fresh --seed
 echo Done!
