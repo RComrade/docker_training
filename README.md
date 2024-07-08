@@ -113,7 +113,7 @@ DELETE `/api/item/{id}` удаляет задачу с заданным `{id}`
 + `completed_at` - передается время в формате Zulu, отвечает за время завершения задачи <br />
 
 ## Диаграмма приложения <br />
-([Диаграмма компонентов приложения](https://github.com/RComrade/docker_training/blob/main/todoapp.png)
+[Диаграмма компонентов приложения](/todoapp.png)
 
 
 ## Вопросы <br />
