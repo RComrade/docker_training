@@ -8,9 +8,7 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - \
     && apt-get install -y nodejs \
-    && npm install -g npm@8.19.0
-
-RUN apt-get update && apt-get install -y \
+    npm install -g npm@8.19.0 \
     git \
     curl \
     zip \
