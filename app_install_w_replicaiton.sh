@@ -44,6 +44,8 @@ echo
 
 docker exec -it todoapp chown -R www-data:www-data /var/www    
 docker exec -it todoapp chmod -R 777 /var/www 
+docker exec -it todoapp composer install
+docker exec -it todoapp npm install
 docker exec -it todoapp composer update
 docker exec -it todoapp php artisan key:generate
 docker exec -it todoapp php artisan migrate:fresh --seed
