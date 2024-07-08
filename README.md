@@ -5,8 +5,7 @@
 
 ## Необходимое ПО:
 git - Можно установить с помощью команды `apt-get update && apt-get install git -y`  <br />
-docker - Можно установить с помощью команды `curl -fsSL https://get.docker.com -o get-docker.sh <br />
-sh get-docker.sh`  <br />
+docker - Можно установить с помощью команды `curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh`  <br />
 docker-compose - Можно установить с помощью команды `apt-get update && apt-get install docker-compose -y`  <br />
 
 ## Установка и запуск 
