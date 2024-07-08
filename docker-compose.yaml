@@ -23,7 +23,7 @@ services:
       - './first-host.cnf:/etc/mysql/conf.d/mysql_extra.cnf'
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: testovoe_db
+      MYSQL_DATABASE: todoapp_db
       MYSQL_USER: user
       MYSQL_PASSWORD: password2
     networks:
@@ -38,7 +38,7 @@ services:
       - './second-host.cnf:/etc/mysql/conf.d/mysql_extra.cnf'
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: testovoe_db
+      MYSQL_DATABASE: todoapp_db
       MYSQL_USER: user
       MYSQL_PASSWORD: password2
     networks:
@@ -48,8 +48,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: testovoe
-    container_name: testovoe
+    image: todoapp
+    container_name: todoapp
     volumes:
       - './src/:/var/www'
       - '.env:/var/www/.env'
