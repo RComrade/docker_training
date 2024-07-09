@@ -113,7 +113,7 @@
 + `completed_at` - передается время в формате Zulu, отвечает за время завершения задачи <br />
 
 ## Диаграмма приложения <br />
-![image](https://github.com/RComrade/docker_training/assets/46085502/852f1322-375e-40c1-9144-7de74602a30b)
+![image](https://github.com/RComrade/docker_training/assets/46085502/618d0300-ed06-429f-a349-c447829e6037)
 
 
 ## Вопросы <br />
